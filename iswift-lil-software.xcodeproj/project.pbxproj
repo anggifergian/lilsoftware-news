@@ -13,9 +13,11 @@
 		38D2563E2A050C7A00E9474C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D2563C2A050C7A00E9474C /* Main.storyboard */; };
 		38D256402A050C7C00E9474C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38D2563F2A050C7C00E9474C /* Assets.xcassets */; };
 		38D256432A050C7C00E9474C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38D256412A050C7C00E9474C /* LaunchScreen.storyboard */; };
+		F26870C0564028573F715DBF /* Pods_iswift_lil_software.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E35F6084C3729D3B3BC379 /* Pods_iswift_lil_software.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15F55FC76296C0B55F05C3F2 /* Pods-iswift-lil-software.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iswift-lil-software.release.xcconfig"; path = "Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software.release.xcconfig"; sourceTree = "<group>"; };
 		38D256332A050C7A00E9474C /* iswift-lil-software.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iswift-lil-software.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D256362A050C7A00E9474C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38D256382A050C7A00E9474C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		38D2563F2A050C7C00E9474C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38D256422A050C7C00E9474C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38D256442A050C7C00E9474C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D873E1ADBFE53D11D63C143 /* Pods-iswift-lil-software.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iswift-lil-software.debug.xcconfig"; path = "Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software.debug.xcconfig"; sourceTree = "<group>"; };
+		E7E35F6084C3729D3B3BC379 /* Pods_iswift_lil_software.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iswift_lil_software.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F26870C0564028573F715DBF /* Pods_iswift_lil_software.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				38D256352A050C7A00E9474C /* iswift-lil-software */,
 				38D256342A050C7A00E9474C /* Products */,
+				C5DF4AE078E3F4757FFF55D1 /* Pods */,
+				4B41A8A6B830905514163001 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +63,9 @@
 		38D256352A050C7A00E9474C /* iswift-lil-software */ = {
 			isa = PBXGroup;
 			children = (
+				38D2564C2A050ED800E9474C /* Controllers */,
+				38D2564B2A050ED300E9474C /* Services */,
+				38D2564A2A050ECD00E9474C /* Models */,
 				38D256362A050C7A00E9474C /* AppDelegate.swift */,
 				38D256382A050C7A00E9474C /* SceneDelegate.swift */,
 				38D2563A2A050C7A00E9474C /* ViewController.swift */,
@@ -67,6 +77,60 @@
 			path = "iswift-lil-software";
 			sourceTree = "<group>";
 		};
+		38D2564A2A050ECD00E9474C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		38D2564B2A050ED300E9474C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		38D2564C2A050ED800E9474C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				38D2564E2A050EE400E9474C /* ReadingList */,
+				38D2564D2A050EDF00E9474C /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		38D2564D2A050EDF00E9474C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		38D2564E2A050EE400E9474C /* ReadingList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ReadingList;
+			sourceTree = "<group>";
+		};
+		4B41A8A6B830905514163001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7E35F6084C3729D3B3BC379 /* Pods_iswift_lil_software.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5DF4AE078E3F4757FFF55D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D873E1ADBFE53D11D63C143 /* Pods-iswift-lil-software.debug.xcconfig */,
+				15F55FC76296C0B55F05C3F2 /* Pods-iswift-lil-software.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38D256472A050C7C00E9474C /* Build configuration list for PBXNativeTarget "iswift-lil-software" */;
 			buildPhases = (
+				D22CE9EC389BE041A9428D1B /* [CP] Check Pods Manifest.lock */,
 				38D2562F2A050C7A00E9474C /* Sources */,
 				38D256302A050C7A00E9474C /* Frameworks */,
 				38D256312A050C7A00E9474C /* Resources */,
+				15EC29C16F6BE776EBC07F50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +198,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15EC29C16F6BE776EBC07F50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D22CE9EC389BE041A9428D1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iswift-lil-software-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38D2562F2A050C7A00E9474C /* Sources */ = {
@@ -217,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -284,6 +392,7 @@
 		};
 		38D256482A050C7C00E9474C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D873E1ADBFE53D11D63C143 /* Pods-iswift-lil-software.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +420,7 @@
 		};
 		38D256492A050C7C00E9474C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15F55FC76296C0B55F05C3F2 /* Pods-iswift-lil-software.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
