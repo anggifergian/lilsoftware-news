@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		386C8E1E2A0B44A3005E57F7 /* ReadingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E1D2A0B44A3005E57F7 /* ReadingListViewController.swift */; };
 		386C8E202A0B4608005E57F7 /* NewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C8E1F2A0B4608005E57F7 /* NewsViewCell.xib */; };
-		386C8E232A0B493B005E57F7 /* LilSoftware.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E212A0B493B005E57F7 /* LilSoftware.xcdatamodeld */; };
 		38D256372A050C7A00E9474C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D256362A050C7A00E9474C /* AppDelegate.swift */; };
 		38D256392A050C7A00E9474C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D256382A050C7A00E9474C /* SceneDelegate.swift */; };
 		38D2563B2A050C7A00E9474C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D2563A2A050C7A00E9474C /* ViewController.swift */; };
@@ -28,9 +26,7 @@
 
 /* Begin PBXFileReference section */
 		15F55FC76296C0B55F05C3F2 /* Pods-iswift-lil-software.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iswift-lil-software.release.xcconfig"; path = "Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software.release.xcconfig"; sourceTree = "<group>"; };
-		386C8E1D2A0B44A3005E57F7 /* ReadingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingListViewController.swift; sourceTree = "<group>"; };
 		386C8E1F2A0B4608005E57F7 /* NewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewCell.xib; sourceTree = "<group>"; };
-		386C8E222A0B493B005E57F7 /* LilSoftware.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LilSoftware.xcdatamodel; sourceTree = "<group>"; };
 		38D256332A050C7A00E9474C /* iswift-lil-software.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iswift-lil-software.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D256362A050C7A00E9474C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38D256382A050C7A00E9474C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,13 +58,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		386C8E242A0B7C29005E57F7 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
 		38D2562A2A050C7A00E9474C = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +82,6 @@
 				38D2564C2A050ED800E9474C /* Controllers */,
 				38D2564B2A050ED300E9474C /* Services */,
 				38D2564A2A050ECD00E9474C /* Models */,
-				386C8E242A0B7C29005E57F7 /* Storage */,
 				38D256362A050C7A00E9474C /* AppDelegate.swift */,
 				38D256382A050C7A00E9474C /* SceneDelegate.swift */,
 				38D2563A2A050C7A00E9474C /* ViewController.swift */,
@@ -101,7 +89,6 @@
 				38D2563F2A050C7C00E9474C /* Assets.xcassets */,
 				38D256412A050C7C00E9474C /* LaunchScreen.storyboard */,
 				38D256442A050C7C00E9474C /* Info.plist */,
-				386C8E212A0B493B005E57F7 /* LilSoftware.xcdatamodeld */,
 			);
 			path = "iswift-lil-software";
 			sourceTree = "<group>";
@@ -126,7 +113,6 @@
 		38D2564C2A050ED800E9474C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38D2564E2A050EE400E9474C /* ReadingList */,
 				38D2564D2A050EDF00E9474C /* Home */,
 			);
 			path = Controllers;
@@ -142,14 +128,6 @@
 				38D2565F2A0514F000E9474C /* TopNewsCollectionViewCell.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		38D2564E2A050EE400E9474C /* ReadingList */ = {
-			isa = PBXGroup;
-			children = (
-				386C8E1D2A0B44A3005E57F7 /* ReadingListViewController.swift */,
-			);
-			path = ReadingList;
 			sourceTree = "<group>";
 		};
 		4B41A8A6B830905514163001 /* Frameworks */ = {
@@ -288,8 +266,6 @@
 				38D2563B2A050C7A00E9474C /* ViewController.swift in Sources */,
 				38D256372A050C7A00E9474C /* AppDelegate.swift in Sources */,
 				38D256542A05115200E9474C /* ArticleService.swift in Sources */,
-				386C8E1E2A0B44A3005E57F7 /* ReadingListViewController.swift in Sources */,
-				386C8E232A0B493B005E57F7 /* LilSoftware.xcdatamodeld in Sources */,
 				38D256392A050C7A00E9474C /* SceneDelegate.swift in Sources */,
 				38D256502A050F6500E9474C /* ArticleResponse.swift in Sources */,
 				38D256602A0514F000E9474C /* TopNewsCollectionViewCell.swift in Sources */,
@@ -462,7 +438,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,19 +492,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		386C8E212A0B493B005E57F7 /* LilSoftware.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				386C8E222A0B493B005E57F7 /* LilSoftware.xcdatamodel */,
-			);
-			currentVersion = 386C8E222A0B493B005E57F7 /* LilSoftware.xcdatamodel */;
-			path = LilSoftware.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 38D2562B2A050C7A00E9474C /* Project object */;
 }
