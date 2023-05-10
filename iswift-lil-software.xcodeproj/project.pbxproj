@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		386C8E202A0B4608005E57F7 /* NewsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386C8E1F2A0B4608005E57F7 /* NewsViewCell.xib */; };
+		386C8E292A0BC78C005E57F7 /* NewsReader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E272A0BC78C005E57F7 /* NewsReader.xcdatamodeld */; };
+		386C8E2C2A0BC8D1005E57F7 /* NotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E2B2A0BC8D1005E57F7 /* NotificationExtension.swift */; };
+		386C8E2F2A0BC941005E57F7 /* CoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E2E2A0BC941005E57F7 /* CoreDataStorage.swift */; };
+		386C8E322A0BD8BE005E57F7 /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386C8E312A0BD8BE005E57F7 /* ReadingViewController.swift */; };
 		38D256372A050C7A00E9474C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D256362A050C7A00E9474C /* AppDelegate.swift */; };
 		38D256392A050C7A00E9474C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D256382A050C7A00E9474C /* SceneDelegate.swift */; };
 		38D2563B2A050C7A00E9474C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D2563A2A050C7A00E9474C /* ViewController.swift */; };
@@ -27,6 +31,10 @@
 /* Begin PBXFileReference section */
 		15F55FC76296C0B55F05C3F2 /* Pods-iswift-lil-software.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iswift-lil-software.release.xcconfig"; path = "Target Support Files/Pods-iswift-lil-software/Pods-iswift-lil-software.release.xcconfig"; sourceTree = "<group>"; };
 		386C8E1F2A0B4608005E57F7 /* NewsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewCell.xib; sourceTree = "<group>"; };
+		386C8E282A0BC78C005E57F7 /* NewsData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsData.xcdatamodel; sourceTree = "<group>"; };
+		386C8E2B2A0BC8D1005E57F7 /* NotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExtension.swift; sourceTree = "<group>"; };
+		386C8E2E2A0BC941005E57F7 /* CoreDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStorage.swift; sourceTree = "<group>"; };
+		386C8E312A0BD8BE005E57F7 /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		38D256332A050C7A00E9474C /* iswift-lil-software.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iswift-lil-software.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38D256362A050C7A00E9474C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38D256382A050C7A00E9474C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +66,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386C8E2A2A0BC8A6005E57F7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				386C8E2B2A0BC8D1005E57F7 /* NotificationExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		386C8E2D2A0BC933005E57F7 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				386C8E2E2A0BC941005E57F7 /* CoreDataStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		386C8E302A0BD8AA005E57F7 /* Reading */ = {
+			isa = PBXGroup;
+			children = (
+				386C8E312A0BD8BE005E57F7 /* ReadingViewController.swift */,
+			);
+			path = Reading;
+			sourceTree = "<group>";
+		};
 		38D2562A2A050C7A00E9474C = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +111,8 @@
 		38D256352A050C7A00E9474C /* iswift-lil-software */ = {
 			isa = PBXGroup;
 			children = (
+				386C8E2D2A0BC933005E57F7 /* Storage */,
+				386C8E2A2A0BC8A6005E57F7 /* Extensions */,
 				38D2564C2A050ED800E9474C /* Controllers */,
 				38D2564B2A050ED300E9474C /* Services */,
 				38D2564A2A050ECD00E9474C /* Models */,
@@ -89,6 +123,7 @@
 				38D2563F2A050C7C00E9474C /* Assets.xcassets */,
 				38D256412A050C7C00E9474C /* LaunchScreen.storyboard */,
 				38D256442A050C7C00E9474C /* Info.plist */,
+				386C8E272A0BC78C005E57F7 /* NewsReader.xcdatamodeld */,
 			);
 			path = "iswift-lil-software";
 			sourceTree = "<group>";
@@ -113,6 +148,7 @@
 		38D2564C2A050ED800E9474C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				386C8E302A0BD8AA005E57F7 /* Reading */,
 				38D2564D2A050EDF00E9474C /* Home */,
 			);
 			path = Controllers;
@@ -264,15 +300,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				38D2563B2A050C7A00E9474C /* ViewController.swift in Sources */,
+				386C8E292A0BC78C005E57F7 /* NewsReader.xcdatamodeld in Sources */,
 				38D256372A050C7A00E9474C /* AppDelegate.swift in Sources */,
+				386C8E2F2A0BC941005E57F7 /* CoreDataStorage.swift in Sources */,
 				38D256542A05115200E9474C /* ArticleService.swift in Sources */,
 				38D256392A050C7A00E9474C /* SceneDelegate.swift in Sources */,
 				38D256502A050F6500E9474C /* ArticleResponse.swift in Sources */,
+				386C8E2C2A0BC8D1005E57F7 /* NotificationExtension.swift in Sources */,
 				38D256602A0514F000E9474C /* TopNewsCollectionViewCell.swift in Sources */,
 				38D2565C2A0514C600E9474C /* NewsViewCell.swift in Sources */,
 				38D2565E2A0514D800E9474C /* TopNewsViewCell.swift in Sources */,
 				38D2565A2A0514A700E9474C /* HomeViewController.swift in Sources */,
 				38D256522A050F6E00E9474C /* Article.swift in Sources */,
+				386C8E322A0BD8BE005E57F7 /* ReadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +532,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		386C8E272A0BC78C005E57F7 /* NewsReader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				386C8E282A0BC78C005E57F7 /* NewsData.xcdatamodel */,
+			);
+			currentVersion = 386C8E282A0BC78C005E57F7 /* NewsData.xcdatamodel */;
+			path = NewsReader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 38D2562B2A050C7A00E9474C /* Project object */;
 }

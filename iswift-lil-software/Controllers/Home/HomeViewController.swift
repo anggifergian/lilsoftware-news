@@ -29,12 +29,23 @@ class HomeViewController: UIViewController {
         
         let refreshControl = UIRefreshControl()
         newsTableView.refreshControl = refreshControl
-        self.refreshControl = refreshControl
+        self.refreshControl          = refreshControl
         
         refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
         refreshControl.beginRefreshing()
         
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(deletedReadingList(_:)),
+            name: .deleteReadingList,
+            object: nil
+        )
+        
         loadArticles()
+    }
+    
+    @objc func deletedReadingList(_ sender: Any) {
+        newsTableView.reloadData()
     }
     
     @objc func handleRefresh() {
@@ -114,6 +125,20 @@ extension HomeViewController: UITableViewDataSource {
         } else {
             cell.thumbImage.image = nil
         }
+        
+        if CoreDataStorage.shared.isAddedToReadingList(url: item.url) {
+            if #available(iOS 13.0, *) {
+                cell.bookmarkBtn.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            }
+            cell.bookmarkBtn.isEnabled = false
+        } else {
+            if #available(iOS 13.0, *) {
+                cell.bookmarkBtn.setImage(UIImage(systemName: "bookmark"), for: .normal)
+            }
+            cell.bookmarkBtn.isEnabled = true
+        }
+        
+        cell.delegate = self
         
         return cell
     }
@@ -205,5 +230,20 @@ extension HomeViewController: TopNewsViewCellDelegate {
             at: .centeredHorizontally,
             animated: true
         )
+    }
+}
+
+// MARK: - NewsViewCellDelegate
+extension HomeViewController: NewsViewCellDelegate {
+    func newsViewCellBookmarkButtonTapped(_ cell: NewsViewCell) {
+        if let indexPath = newsTableView.indexPath(for: cell) {
+            let item = readingList[indexPath.row]
+            CoreDataStorage.shared.addReadingList(item: item)
+            
+            if #available(iOS 13.0, *) {
+                cell.bookmarkBtn.setImage(UIImage(systemName: "bookmark.fill"), for: .normal)
+            }
+            cell.bookmarkBtn.isEnabled = false
+        }
     }
 }
