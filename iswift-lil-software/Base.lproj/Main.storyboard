@@ -8,37 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Reading List-->
-        <scene sceneID="9tm-2r-bVb">
-            <objects>
-                <viewController id="Ypu-Dt-Cfq" customClass="ReadingListViewController" customModule="iswift_lil_software" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B75-pP-WPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="d11-Mf-1sr">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="spc-ap-IdP"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="spc-ap-IdP" firstAttribute="bottom" secondItem="d11-Mf-1sr" secondAttribute="bottom" id="6gd-VB-7aV"/>
-                            <constraint firstItem="spc-ap-IdP" firstAttribute="trailing" secondItem="d11-Mf-1sr" secondAttribute="trailing" id="QkO-nR-XaB"/>
-                            <constraint firstItem="d11-Mf-1sr" firstAttribute="top" secondItem="spc-ap-IdP" secondAttribute="top" id="SIT-a6-IXa"/>
-                            <constraint firstItem="d11-Mf-1sr" firstAttribute="leading" secondItem="spc-ap-IdP" secondAttribute="leading" id="kff-Lk-Khe"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Reading List" id="HYZ-h7-Lci"/>
-                    <connections>
-                        <outlet property="readingListTable" destination="d11-Mf-1sr" id="rnT-Pk-jTG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="W2J-QU-jip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2613.04347826087" y="391.74107142857139"/>
-        </scene>
         <!--Home-->
         <scene sceneID="fYj-fm-PYK">
             <objects>
@@ -140,7 +109,6 @@
                     </tabBar>
                     <connections>
                         <segue destination="7rg-Cl-fGV" kind="relationship" relationship="viewControllers" id="yX8-E0-HBu"/>
-                        <segue destination="3zP-Z9-tOn" kind="relationship" relationship="viewControllers" id="6yp-Yb-Wt3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3z-mF-U3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,32 +134,11 @@
             </objects>
             <point key="canvasLocation" x="1702.8985507246377" y="-335.49107142857139"/>
         </scene>
-        <!--Reading List-->
-        <scene sceneID="GyD-r8-0fN">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3zP-Z9-tOn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Reading List" image="newspaper" catalog="system" selectedImage="newspaper.fill" id="L5i-hD-2Fb"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JaY-pa-jhD">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Ypu-Dt-Cfq" kind="relationship" relationship="rootViewController" id="YqA-Hu-fhC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N7G-IG-7YQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1702.8985507246377" y="391.74107142857139"/>
-        </scene>
     </scenes>
     <resources>
         <image name="bookmark" catalog="system" width="112" height="128"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
-        <image name="newspaper" catalog="system" width="128" height="111"/>
-        <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

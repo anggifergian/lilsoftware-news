@@ -7,10 +7,13 @@
 
 import UIKit
 import SDWebImage
+import SafariServices
 
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var newsTableView: UITableView!
+    
+    weak var refreshControl: UIRefreshControl!
     
     var readingList: [Article] = []
 
@@ -22,12 +25,26 @@ class HomeViewController: UIViewController {
         newsTableView.dataSource = self
         newsTableView.delegate = self
         
+        let refreshControl = UIRefreshControl()
+        newsTableView.refreshControl = refreshControl
+        self.refreshControl = refreshControl
+        
+        refreshControl.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
+        refreshControl.beginRefreshing()
+        
+        loadArticles()
+    }
+    
+    @objc func handleRefresh() {
+        print("Refreshing...")
         loadArticles()
     }
     
     func loadArticles() {
         ArticleService.shared.loadArticleList { [weak self] result in
             guard let strongSelf = self else { return }
+            
+            strongSelf.refreshControl.endRefreshing()
             
             switch result {
             case .success(let data):
@@ -75,6 +92,13 @@ extension HomeViewController: UITableViewDataSource {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let article = readingList[indexPath.row]
+        
+        if let url = URL(string: article.url) {
+            let controller = SFSafariViewController(url: url)
+            present(controller, animated: true)
+        }
+        
         newsTableView.deselectRow(at: indexPath, animated: true)
     }
 }
